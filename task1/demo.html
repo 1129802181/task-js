@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<button id="btn1">调用第一种</button>
+<button id="bnt2">调用第二种</button>
+<button id="btn3">调用第三种</button>
+<script>
+//    var playerNum=[];
+//    // 首先设所有人都是平民
+//    for (var i=0;i<9;i++) {
+//        playerNum[i] = i+1;
+//    }
+//    // 根据杀手数随机把一些人变为杀手
+//    for (var random,a=0;a<3;a++){
+//        //从所有人中取一个为杀手,如他已经是杀手，继续取
+//        do{
+//            random=Math.floor(Math.random()*9);
+//        }while(playerNum[random]===null);
+//        //已经被选中为杀手的人会被赋值为杀手
+//        playerNum[random]=null;
+//    }
+//    console.log(playerNum)
+var count=9;
+var originalArray=[];//原数组
+var originalArray2=[];//原数组
+//给原数组originalArray赋值
+for (var a=0;a<count;a++){
+    originalArray[a]=a;
+}
+for (var num,i = 0; i < count; i++){
+    do{
+        num = Math.floor(Math.random()*count);
+    } while (originalArray[num] == null);
+    originalArray[num]=null;
+    originalArray2[i]=num;
+}
+console.log(originalArray2);
+</script>
+</body>
+</html>

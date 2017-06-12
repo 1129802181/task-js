@@ -1,0 +1,38 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 20rem;
+  height: 20rem; }
+
+.square {
+  width: 6rem;
+  height: 6rem;
+  margin: .2rem;
+  border-radius: 1rem;
+  background-color: #FF890A; }
+
+button {
+  display: block;
+  margin: 1rem auto;
+  width: 20rem;
+  padding: 1em 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #FF890A;
+  border-radius: 10px;
+  color: #FF890A;
+  outline: none;
+  cursor: pointer; }
+  button:hover {
+    background-color: #FF890A;
+    color: #fff; }
+
+/*# sourceMappingURL=task1.css.map */
