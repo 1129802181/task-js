@@ -38,7 +38,9 @@ function bgColor(){
 }
 var int;
 function start() {
-    int = setInterval("selectColor()",1000)
+    clearInterval(int);
+    // 多次点击按钮时，为了防止定时器被重复调用，需要先清除一下之前的定时器；
+    int = setInterval("selectColor()",1000);
 }
 function closeColor(){
     clearInterval(int);
