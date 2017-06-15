@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../sass/task2-2.css">
+	<title>task2-2</title>
+</head>
+<body>
+    <header>
+		<button class="page-up" onclick="window.location.href='task2-1.html'">
+			<img src="../images/page-up.png" alt="">
+		</button>
+		<span>参数设置</span>
+		<button class="tip">
+			<img src="../images/tip.png" alt="">
+		</button>
+	</header>
+    <main class="main">
+		<p class="p1">玩家配比</p>
+		<ul id="content"></ul>
+		<form action="" onsubmit="return false;">
+			<!--在网页input输入框输入数字并按下回车键后发现数据会被清空，感觉很奇怪，于是跟踪了代码，发现进入了拦截器流程但获取登录token失败而“踢到”登录页。为什么会获取token失败呢？因为form在没有指明action属性时会以向当前url提交（实际起到了刷新效果，但需要注意的是这时的提交并没有把网址中的查询参数传回去，也就是仅仅就是空空的url），找到问题所在后百度了一下，将其解决，这里给出参考答案的网址：http://blog.csdn.net/xuezhongsong/article/details/6859037；在form中添加onsubmit="return false;"可以解决该问题-->
+			<span class="player-number">请输入玩家数量：</span>
+			<input type="text" value="" class="input1" id="number"oninput="number1()" onchange="selectNum()">
+			<span class="number-tip">&nbsp;&nbsp;玩家数量为：4-18</span>
+			<br><br>
+			<input type="range" min="4" max="18" step="1" id="range" onchange="selectNum()" oninput="range1()">
+		</form>
+		<div class="deal">
+			<button>去发牌</button>
+		</div>
+	</main>
+	<script style="text/javascript" src="../js/task2-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 4rem; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem; }
+  header button {
+    background-color: #29bde0;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  header .page-up {
+    margin-left: 2%; }
+    header .page-up img {
+      width: 1.2rem; }
+  header .tip {
+    margin-right: 2%; }
+    header .tip img {
+      width: 2.4rem; }
+  header span {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 2px; }
+
+.main {
+  width: 100%;
+  background-color: #f0f0f0; }
+  .main .p1 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    letter-spacing: 2px; }
+
+form {
+  width: 96%;
+  margin-left: 2%;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #fff; }
+
+.player-number {
+  font-size: 1rem; }
+
+.input1 {
+  width: 30px;
+  border-radius: 4px;
+  text-align: center;
+  outline: none; }
+
+.number-tip {
+  color: #fbb435;
+  font-size: .8rem; }
+
+.deal {
+  width: 96%;
+  margin-left: 2%; }
+  .deal button {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    background-color: #fbb435;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 2px; }
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  min-height: 200px; }
+  ul li {
+    font-size: 1rem;
+    padding-top: .5rem;
+    width: 50%;
+    text-align: center; }
+
+/*# sourceMappingURL=task2-2.css.map */

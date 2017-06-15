@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29bde0;
+$backgroundColor2: #f0f0f0;
+$backgroundColor3: #fff;
+$fontColor1: #9a9a9a;
+$fontColor2: #fbb435;
+$fontColor3: #787878;
+$width: 640px;
+body {
+  font-size: 62.5%;
+  max-width: $width;
+  margin: 0 auto;
+  background-color: $backgroundColor3;
+  padding-top: 4rem;
+}
+@import "header";
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  button {
+    background-color: $backgroundColor1;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .page-up {
+    margin-left: 2%;
+    img {
+      width: 1.2rem;
+    }
+  }
+  .tip {
+    margin-right: 2%;
+    img {
+      width: 2.4rem;
+    }
+  }
+  span {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
+.main {
+  width: 100%;
+  background-color: $backgroundColor2;
+  .p1 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+  }
+}
+form {
+  width: 96%;
+  margin-left: 2%;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: $backgroundColor3;
+}
+.player-number {
+  font-size: 1rem;
+}
+.input1 {
+  width: 30px;
+  border-radius: 4px;
+  text-align: center;
+  outline: none;
+}
+.number-tip {
+  color: $fontColor2;
+  font-size: .8rem;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  //height: 20px;
+  //border-radius: 20px; /*将轨道设为圆角的*/
+}
+.deal {
+  width: 96%;
+  margin-left: 2%;
+  button {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    background-color: $fontColor2;
+    color: $backgroundColor3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+}ul {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   list-style: none;
+   margin: 0 0 1rem;
+   padding: 0;
+   min-height: 200px;
+  li {
+    font-size: 1rem;
+    padding-top: .5rem;
+    width: 50%;
+    text-align: center;
+  }
+ }
