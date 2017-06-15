@@ -4,8 +4,6 @@
 var range = document.getElementById("range");
 var num = document.getElementById("number");
 // 先将两个input的dom节点获取，再通过函数进行数据互换
-console.log(range);
-console.log(num);
 // oninput 事件在元素值发生变化时立即触发，然后通过互换两个input的值，实现互相绑定
 function number1() {
     range.value = num.value;
@@ -65,7 +63,6 @@ function selectNum() {
                 arr[j] = b;
             }
         }
-        console.log(arr);
         deleteSameNum();
         // 根据input中的数据来判断应该生成几个杀手
         if (num.value > 3 && num.value < 8) {
