@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29bde0;
+$backgroundColor2: #74d4eb;
+$backgroundColor3: #fff;
+$backgroundColor4: #ffedc5;
+$fontColor1: #f56b81;
+$fontColor2: #fbb435;
+$fontColor3: #787878;
+$width: 640px;
+body {
+  font-size: 62.5%;
+  max-width: $width;
+  margin: 0 auto;
+  padding-top: 64px;
+  background-color: $backgroundColor3;
+}
+@import "header";
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $backgroundColor3;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid $backgroundColor2;
+  .head1-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .back {
+    @extend .head1-img;
+    left: 5%;
+    background: url(../images/page-up1.png) no-repeat;
+    background-size: 1rem;
+    height: 2rem;
+    margin-top: -1rem;
+  }
+  .close1 {
+    @extend .head1-img;
+    right: 5%;
+    background: url(../images/close.png) no-repeat;
+    background-size: 1.5rem;
+  }
+}
+.content {
+  position: relative;
+  max-width: $width;
+  background-color: $backgroundColor1;
+  margin: 0 auto;
+  padding: 1rem 0;
+  .player-num {
+    position: relative;
+    z-index: 100;
+    margin: 1rem auto;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid $backgroundColor4;
+    background-color: $backgroundColor3;
+    color: $fontColor1;
+  }
+  .status {
+    position: absolute;
+    left: 50%;
+    margin-left: -4rem;
+    z-index: 50;
+    opacity: 0;
+    img {
+      width: 8rem;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      color: $backgroundColor1;
+    }
+  }
+  .player-tip {
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: -42px;
+    text-align: center;
+    background-color: $backgroundColor4;
+    border: 3px solid $backgroundColor3;
+    img {
+      width: 70%;
+      margin: 5rem 0;
+      opacity: 1;
+    }
+  }
+}
+@import "footer";
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+.die1 {
+  width: 80%;
+  background-color: #fbb435;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: $backgroundColor3;
+  padding: 1rem 0;
+  border: none;
+}

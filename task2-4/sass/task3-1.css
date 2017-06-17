@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 64px;
+  background-color: #fff; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid #74d4eb; }
+  header .head1-img, header .back, header .close1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    cursor: pointer; }
+  header .back {
+    left: 5%;
+    background: url(../images/page-up1.png) no-repeat;
+    background-size: 1rem;
+    height: 2rem;
+    margin-top: -1rem; }
+  header .close1 {
+    right: 5%;
+    background: url(../images/close.png) no-repeat;
+    background-size: 1.5rem; }
+
+.content {
+  position: relative;
+  max-width: 640px;
+  background-color: #29bde0;
+  margin: 0 auto;
+  padding: 1rem 0; }
+  .content .player-num {
+    position: relative;
+    z-index: 100;
+    margin: 1rem auto;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #ffedc5;
+    background-color: #fff;
+    color: #f56b81; }
+  .content .status {
+    position: absolute;
+    left: 50%;
+    margin-left: -4rem;
+    z-index: 50;
+    opacity: 0; }
+    .content .status img {
+      width: 8rem; }
+    .content .status p {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #29bde0; }
+  .content .player-tip {
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: -42px;
+    text-align: center;
+    background-color: #ffedc5;
+    border: 3px solid #fff; }
+    .content .player-tip img {
+      width: 70%;
+      margin: 5rem 0;
+      opacity: 1; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center; }
+
+.die1 {
+  width: 80%;
+  background-color: #fbb435;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #fff;
+  padding: 1rem 0;
+  border: none; }
+
+/*# sourceMappingURL=task3-1.css.mapap */
