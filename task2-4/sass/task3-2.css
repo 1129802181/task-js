@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 95px;
+  background-color: #fff; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid #74d4eb; }
+  header .head1-img, header .back, header .close1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    cursor: pointer; }
+  header .back {
+    left: 5%;
+    background: url(../images/page-up1.png) no-repeat;
+    background-size: 1rem;
+    height: 2rem;
+    margin-top: -1rem; }
+  header .close1 {
+    right: 5%;
+    background: url(../images/close.png) no-repeat;
+    background-size: 1.5rem; }
+
+.content {
+  max-width: 640px;
+  background-color: #29bde0;
+  margin: 0 auto;
+  min-height: 30rem;
+  overflow: hidden; }
+  .content .role {
+    width: 25%;
+    margin: 1rem 0 0 5%;
+    float: left;
+    border: 3px solid #fff;
+    font-size: 1rem; }
+    .content .role p {
+      margin: 0;
+      text-align: center; }
+    .content .role .role-name {
+      padding: 1rem 0;
+      background-color: #f5c97b; }
+    .content .role .role-num {
+      padding: .2rem 0;
+      background-color: #83b09a; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center; }
+
+.die1 {
+  width: 80%;
+  background-color: #fbb435;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #fff;
+  padding: 1rem 0;
+  border: none; }
+
+/*# sourceMappingURL=task3-2.css.map */

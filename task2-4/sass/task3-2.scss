@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*防止sass中注释报错*/
+$backgroundColor1: #29bde0;
+$backgroundColor2: #74d4eb;
+$backgroundColor3: #fff;
+$backgroundColor4: #ffedc5;
+$fontColor1: #f56b81;
+$fontColor2: #fbb435;
+$fontColor3: #787878;
+$width: 640px;
+body {
+  font-size: 62.5%;
+  max-width: $width;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 95px;
+  background-color: $backgroundColor3;
+}
+@import "header";
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $backgroundColor3;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid $backgroundColor2;
+  .head1-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .back {
+    @extend .head1-img;
+    left: 5%;
+    background: url(../images/page-up1.png) no-repeat;
+    background-size: 1rem;
+    height: 2rem;
+    margin-top: -1rem;
+  }
+  .close1 {
+    @extend .head1-img;
+    right: 5%;
+    background: url(../images/close.png) no-repeat;
+    background-size: 1.5rem;
+  }
+}
+.content {
+  max-width: $width;
+  background-color: $backgroundColor1;
+  margin: 0 auto;
+  min-height: 30rem;
+  overflow: hidden;
+  .role {
+    width: 25%;
+    margin: 1rem 0 0 5%;
+    float: left;
+    border: 3px solid #fff;
+    font-size: 1rem;
+    p {
+      margin: 0;
+      text-align: center;
+    }
+    .role-name {
+      padding: 1rem 0;
+      background-color: #f5c97b;
+    }
+    .role-num {
+      padding: .2rem 0;
+      background-color: #83b09a;
+    }
+  }
+}
+@import "footer";
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+.die1 {
+  width: 80%;
+  background-color: #fbb435;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: $backgroundColor3;
+  padding: 1rem 0;
+  border: none;
+}
