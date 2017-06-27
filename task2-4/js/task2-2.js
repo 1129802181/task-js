@@ -19,7 +19,7 @@ function selectNum() {
         alert("请输入正确的数值：4-18");
         document.getElementById("number").value = '';
         number1();
-        // document.getElementById("content").innerHTML = '';
+        document.getElementById("content").innerHTML = '';
     } else {
         // 下面的方法是只设置ul，然后动态的添加li标签，需要在函数开始之前对ul进行清空操作；
         document.getElementById("content").innerHTML = '';

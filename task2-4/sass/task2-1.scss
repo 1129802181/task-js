@@ -113,9 +113,10 @@ body {
       margin-left: .5rem;
       outline: none;
       cursor: pointer;
-      &:hover {
-        background-color: #69d1e9;
-      }
+
+    }
+    button:first-child{
+      background-color: #69d1e9;
     }
   }
 }

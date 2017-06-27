@@ -107,7 +107,7 @@ header {
       margin-left: .5rem;
       outline: none;
       cursor: pointer; }
-      .main .click-circle button:hover {
-        background-color: #69d1e9; }
+    .main .click-circle button:first-child {
+      background-color: #69d1e9; }
 
-/*# sourceMappingURL=task2-1.css.map*/
+/*# sourceMappingURL=task2-1.css.map */

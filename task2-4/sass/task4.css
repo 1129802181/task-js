@@ -4,7 +4,8 @@ body {
   font-size: 62.5%;
   max-width: 640px;
   margin: 0 auto;
-  padding-top: 64px; }
+  padding-top: 64px;
+  padding-bottom: 4rem; }
 
 header {
   position: fixed;
@@ -56,7 +57,7 @@ header {
   font-size: 1.5rem;
   color: #ffc865;
   padding: 0 10%;
-  margin: 0; }
+  margin: 0 0 1rem 0; }
 
 .summary {
   font-size: 1rem;
@@ -95,6 +96,9 @@ header {
   color: #b3b3b3;
   margin: 0; }
 
+.content {
+  background-color: #fff; }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -111,7 +115,7 @@ footer {
 
 .foot {
   padding: 1rem 0;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   width: 40%;
   font-size: 1.5rem;
   color: #fff;
@@ -126,4 +130,4 @@ footer {
 .share {
   background-color: #fbb435; }
 
-/*# sourceMappingURL=task13-3.css.map */
+/*# sourceMappingURL=task4.css.map */

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../sass/task2-1.css">
-	<title>task13-1</title>
+	<title>task2-1</title>
 </head>
 <body>
 	<header>
@@ -17,18 +17,20 @@
 		</div>
 		<div class="main">
 			<div class="game-name">捉鬼游戏</div>
-			<button class="ver" type="button" onclick="window.location.href='task2-2.html'">简化版</button>
+			<button class="ver" type="button" onclick="game()">简化版</button>
 			<p class="user">有1133个用户正在玩此款游戏</p>
-			<button class="ver" type="button" onclick="window.location.href='task2-2.html'">猜词版</button>
+			<button class="ver" type="button" onclick="game()">猜词版</button>
 			<button class="next-page"></button>
 			<p class="user">有1133个用户正在玩此款游戏</p>
-			<button class="ver" type="button" onclick="window.location.href='task2-2.html'">白痴版</button>
+			<button class="ver" type="button" onclick="game()">白痴版</button>
 			<p class="user">有1133个用户正在玩此款游戏</p>
 			<div class="click-circle">
-				<button></button>
-				<button></button>
+				<button onclick="color1()"></button>
+				<button onclick="color2()"></button>
 			</div>
 		</div>
 	</main>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script style="text/javascript" src="../js/task2-1.js"></script>
 </body>
 </html>

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*防止sass中注释报错*/
+body {
+  font-size: 62.5%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 95px;
+  background-color: #fff; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f0f0f0;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid #74d4eb; }
+  header .head1-img, header .back, header .close1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    cursor: pointer; }
+  header .back {
+    left: 5%;
+    background: url(../images/page-up1.png) no-repeat;
+    background-size: 1rem;
+    height: 2rem;
+    margin-top: -1rem; }
+  header .close1 {
+    right: 5%;
+    background: url(../images/close.png) no-repeat;
+    background-size: 1.5rem; }
+
+.main {
+  background-color: #f0f0f0;
+  overflow: hidden; }
+
+.days {
+  padding: 1rem 0;
+  width: 96%;
+  color: #24a7c6;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 1px solid #c9c9c9;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 1rem auto 0; }
+
+.content {
+  position: relative;
+  margin: .5rem auto 0;
+  width: 96%;
+  background-color: #f7f7f7;
+  border: 1px solid #c9c9c9; }
+  .content .content1 {
+    position: relative;
+    margin: 3rem 2rem; }
+    .content .content1 .moon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      z-index: 50;
+      background-color: #f7f7f7;
+      border-radius: 50%;
+      border: 1px solid #c9c9c9; }
+      .content .content1 .moon img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -10px;
+        margin-top: -12px;
+        width: 1.2rem; }
+    .content .content1 .content2 {
+      color: #fff;
+      margin: 0 0 1rem 4rem; }
+      .content .content1 .content2 .content3 {
+        text-align: center;
+        background-color: #24a7c6;
+        padding: .5rem 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        cursor: pointer; }
+      .content .content1 .content2 .content-triangle {
+        float: left;
+        border-color: transparent #24a7c6 transparent transparent;
+        border-style: solid;
+        border-width: .5rem 1rem 0.5rem 0;
+        margin-left: -1rem;
+        margin-top: 2px; }
+      .content .content1 .content2 .content4 {
+        cursor: pointer;
+        background-color: #24a7c6; }
+        .content .content1 .content2 .content4 .content-triangle {
+          margin-top: 10px; }
+        .content .content1 .content2 .content4 .sun {
+          position: relative;
+          float: left;
+          margin-left: -4rem;
+          width: 2rem;
+          height: 2rem;
+          z-index: 50;
+          background-color: #f7f7f7;
+          border-radius: 50%;
+          border: 1px solid #c9c9c9; }
+          .content .content1 .content2 .content4 .sun img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -10px;
+            margin-top: -10px;
+            width: 1.2rem; }
+        .content .content1 .content2 .content4 p {
+          text-align: center;
+          padding: .5rem 0;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          margin: 0; }
+    .content .content1 .line {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      z-index: 1;
+      width: 2px;
+      height: 100%;
+      background-color: #c9c9c9; }
+
+.die-color {
+  color: #000;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  background-color: #29bde0; }
+
+footer {
+  padding: 1rem 0;
+  text-align: center; }
+
+.die1 {
+  width: 40%;
+  background-color: #fbb435;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #f0f0f0;
+  padding: .5rem 0;
+  border: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=task3-3.css.map */

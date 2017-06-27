@@ -55,7 +55,8 @@ header {
     margin: 1rem 0 0 5%;
     float: left;
     border: 3px solid #fff;
-    font-size: 1rem; }
+    font-size: 1rem;
+    cursor: pointer; }
     .content .role p {
       margin: 0;
       text-align: center; }
@@ -86,6 +87,7 @@ footer {
   letter-spacing: .1rem;
   color: #fff;
   padding: 1rem 0;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=task3-2.css.map */

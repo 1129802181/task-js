@@ -76,6 +76,7 @@ form {
   font-size: .8rem;
 }
 input[type=range]::-webkit-slider-runnable-track {
+  cursor: pointer;
   //height: 20px;
   //border-radius: 20px; /*将轨道设为圆角的*/
 }

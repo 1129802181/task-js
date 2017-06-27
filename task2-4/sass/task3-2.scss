@@ -62,6 +62,7 @@ header {
     float: left;
     border: 3px solid #fff;
     font-size: 1rem;
+    cursor: pointer;
     p {
       margin: 0;
       text-align: center;
@@ -90,4 +91,5 @@ footer {
   color: $backgroundColor3;
   padding: 1rem 0;
   border: none;
+  cursor: pointer;
 }

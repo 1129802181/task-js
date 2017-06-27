@@ -21,21 +21,26 @@
 //        playerNum[random]=null;
 //    }
 //    console.log(playerNum)
-var count=9;
-var originalArray=[];//原数组
-var originalArray2=[];//原数组
-//给原数组originalArray赋值
-for (var a=0;a<count;a++){
-    originalArray[a]=a;
-}
-for (var num,i = 0; i < count; i++){
-    do{
-        num = Math.floor(Math.random()*count);
-    } while (originalArray[num] == null);
-    originalArray[num]=null;
-    originalArray2[i]=num;
-}
-console.log(originalArray2);
+//var count=9;
+//var originalArray=[];//原数组
+//var originalArray2=[];//原数组
+////给原数组originalArray赋值
+//for (var a=0;a<count;a++){
+//    originalArray[a]=a;
+//}
+//for (var num,i = 0; i < count; i++){
+//    do{
+//        num = Math.floor(Math.random()*count);
+//    } while (originalArray[num] == null);
+//    originalArray[num]=null;
+//    originalArray2[i]=num;
+//}
+//console.log(originalArray2);
+	var  a = [1,2,3,4,5,6,7];
+	var b = a.filter(function (item) {
+		return (item < 5 )
+    })
+	alert(b)
 </script>
 </body>
 </html>

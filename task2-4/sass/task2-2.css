@@ -68,6 +68,9 @@ form {
   color: #fbb435;
   font-size: .8rem; }
 
+input[type=range]::-webkit-slider-runnable-track {
+  cursor: pointer; }
+
 .deal {
   width: 96%;
   margin-left: 2%; }
