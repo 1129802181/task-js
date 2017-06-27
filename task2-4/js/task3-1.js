@@ -6,6 +6,7 @@ var all = JSON.parse(sessionStorage.getItem("all"));
 console.log(all);
 var clickNum = 0;
 var players = 1;
+//注意玩家数量和点击数量，因为这两个数不是同步变化的
 function lookStatus() {
     if (clickNum % 2 == 0 && clickNum < (all.length*2 - 1)) {
         players++;

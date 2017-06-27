@@ -61,7 +61,6 @@ for (var a = 0; a < day; a++) {
         '<div class="line">' + '</div>'+
         '</div>'+ '</div>');
         sessionStorage.removeItem("b1");  //手动清除浏览器缓存
-
 }
 //添加点击隐藏事件；
 var d = $(".days");
@@ -116,6 +115,7 @@ function oneClick1() {
 }
 
 function oneClick2() {
+    //根据之前流程框的颜色来判断玩家是否按照流程点击，下同；
     if ( $(content[day-1]).children(".content3:eq(0)").css("background-color") == "rgb(36, 167, 198)") {
         alert("请按照顺序点击！")
     }else {
@@ -123,7 +123,6 @@ function oneClick2() {
         $(".content4 .content-triangle").css("border-right-color","#999999");
         alert("亡灵发表遗言并表明身份！")
     }
-
 }
 function oneClick3() {
     if ($(content[day-1]).children(".content3:eq(0)").css("background-color") == "rgb(36, 167, 198)" || $(content[day-1]).children(".content4").css("background-color") == "rgb(36, 167, 198)" ) {
@@ -133,7 +132,6 @@ function oneClick3() {
         $(content[content.length-1]).children("#a3").children(".content-triangle").css("border-right-color","#999999");
         alert("玩家发言讨论！");
     }
-
 }
 function oneClick4() {
     if ($(content[day-1]).children(".content3:eq(0)").css("background-color") == "rgb(36, 167, 198)" || $(content[day-1]).children(".content3:eq(1)").css("background-color") == "rgb(36, 167, 198)" || $(content[day-1]).children(".content4").css("background-color") == "rgb(36, 167, 198)" ) {
